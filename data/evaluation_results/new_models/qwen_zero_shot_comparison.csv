@@ -1,0 +1,17 @@
+team_name,human_score,human_rank,llm_score,llm_rank,machine_score,machine_rank,rank_diff
+SomethingAwful,0.86,5,0.935,1,0.522,7,-4
+erehulka,0.88,4,0.9275,2,0.543,4,-2
+mkrisnai,0.89,3,0.895,3,0.475,16,0
+Team cake,0.91,1,0.885,4,0.468,19,3
+Team NLPunks,0.84,7,0.8375,5,0.489,15,-2
+Team_SINAI,0.85,6,0.83,6,0.413,26,0
+Team Iron Autobots,0.74,8,0.8225,7,0.345,29,-1
+gleb.shnshn,0.74,9,0.8175,8,0.462,20,-1
+Team MarSan_AI,0.89,2,0.7825,9,0.504,12,7
+dkenco,0.68,15,0.725,10,0.183,32,-5
+VitalyProtasov,0.69,13,0.72,11,0.531,6,-2
+nikita.sushko,0.7,12,0.71375,12,0.553,3,0
+ZhongyuLuo,0.73,10,0.7025,13,0.506,11,3
+backtranslation_baseline,0.73,11,0.69,14,0.506,10,3
+mt5_baseline,0.68,14,0.57625,16,0.418,24,2
+delete_baseline,0.47,17,0.36375,17,0.447,22,0

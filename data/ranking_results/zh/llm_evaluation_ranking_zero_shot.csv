@@ -1,0 +1,16 @@
+team_name,evaluation_type,total_samples,sta_mean,cs_mean,fs_mean,j_score_mean,sta_std,cs_std,fs_std,j_score_std,perfect_scores,zero_scores,file_path
+Team Iron Autobots,zero_shot,100,0.795,0.825,0.9,0.74125,0.356009022698055,0.34359213546813844,0.26590801173915524,0.39177746659721685,67,15,LLMEvolution/Team Iron Autobots_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+Team_SINAI,zero_shot,100,0.845,0.82,0.925,0.69125,0.2903759318851716,0.26130983196739516,0.19299604852813632,0.3737162369466649,56,9,LLMEvolution/Team_SINAI_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+SomethingAwful,zero_shot,100,0.785,0.82,0.985,0.6775,0.31984055371071973,0.3372497201442482,0.11135075167680682,0.38319332093881964,54,15,LLMEvolution/SomethingAwful_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+gleb.shnshn,zero_shot,100,0.7,0.92,0.96,0.65,0.42043748259126085,0.1974586006987262,0.15374122295716144,0.4264014327112209,56,24,LLMEvolution/gleb.shnshn_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+VitalyProtasov,zero_shot,100,0.715,0.725,0.89,0.55375,0.3352595858420604,0.32078659635969897,0.28051179776770296,0.4001479366585828,41,15,LLMEvolution/VitalyProtasov_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+erehulka,zero_shot,100,0.67,0.735,0.92,0.5325,0.3424510582152248,0.31346064467102686,0.1974586006987262,0.3895007812390864,37,15,LLMEvolution/erehulka_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+Team NLPunks,zero_shot,100,0.665,0.72,0.895,0.4275,0.4207676966515545,0.29576130151652275,0.20468009037016616,0.37612625486126283,24,29,LLMEvolution/Team NLPunks_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+Team cake,zero_shot,100,0.595,0.69,0.94,0.4175,0.41252486916156667,0.3160680146724592,0.16329931618554522,0.3348544836978075,17,26,LLMEvolution/Team cake_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+mkrisnai,zero_shot,100,0.475,0.76,0.87,0.27875,0.4680445027619239,0.30550504633038944,0.22042200113840402,0.3471815632760298,13,51,LLMEvolution/mkrisnai_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+Team nlp_enjoyers,zero_shot,100,0.4,0.65,0.745,0.2525,0.37605071654517747,0.3295236844080538,0.3726441148919923,0.31581824142402165,11,44,LLMEvolution/Team nlp_enjoyers_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+ZhongyuLuo,zero_shot,100,0.635,0.455,0.71,0.235,0.45424485009561066,0.34152805761959604,0.3636237371545238,0.3325179420996434,11,57,LLMEvolution/ZhongyuLuo_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+delete_baseline,zero_shot,100,0.625,0.515,0.55,0.16,0.4166666666666667,0.27938424357067015,0.3138229572304239,0.19630423718135462,2,43,LLMEvolution/delete_baseline_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+nikita.sushko,zero_shot,100,0.54,0.45,0.445,0.145,0.4476650984877427,0.3217690997211409,0.38201353828672546,0.2597347131442411,6,63,LLMEvolution/nikita.sushko_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+mt5_baseline,zero_shot,100,0.37,0.655,0.52,0.10875,0.4416452253228886,0.3232958428749154,0.3755131169614465,0.20539980107786932,2,69,LLMEvolution/mt5_baseline_zh/etd_zero_shot_results_zh_ZHPrompt.csv
+backtranslation_baseline,zero_shot,100,0.76,0.28,0.545,0.10625,0.39235111053671556,0.3431876713662333,0.31857479340007266,0.19083730312134015,1,70,LLMEvolution/backtranslation_baseline_zh/etd_zero_shot_results_zh_ZHPrompt.csv

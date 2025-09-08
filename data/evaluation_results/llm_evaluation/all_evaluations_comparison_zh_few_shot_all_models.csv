@@ -1,0 +1,16 @@
+team_name,human_rank,human_score,machine_rank,machine_score,llm_qwen_rank,llm_qwen_score,llm_deepseek_rank,llm_deepseek_score,llm_openai_rank,llm_openai_score
+Team cake,1,0.84,13,0.086,1,0.4025,1,0.8625,1,0.52125
+erehulka,2,0.68,4,0.16,7,0.31,3,0.4575,3,0.2725
+Team NLPunks,3,0.6,6,0.15,3,0.365,8,0.33,6,0.2525
+ZhongyuLuo,4,0.56,14,0.052,9,0.24125,9,0.305,4,0.27
+SomethingAwful,5,0.53,7,0.147,5,0.34,4,0.43375,7,0.25125
+Team Iron Autobots,6,0.53,9,0.124,6,0.32375,6,0.34,5,0.265
+VitalyProtasov,7,0.49,2,0.175,12,0.12625,11,0.19625,10,0.11125
+nikita.sushko,8,0.47,1,0.176,11,0.1275,12,0.19375,13,0.10125
+delete_baseline,9,0.43,3,0.175,10,0.14625,10,0.205,12,0.11
+mt5_baseline,10,0.43,12,0.096,14,0.09,13,0.16125,11,0.11
+gleb.shnshn,11,0.41,5,0.155,8,0.28375,7,0.335,9,0.19875
+mkrisnai,12,0.34,10,0.109,4,0.36125,5,0.3975,8,0.2375
+backtranslation_baseline,13,0.34,15,0.027,15,0.07375,15,0.10875,15,0.085
+Team_SINAI,14,0.33,8,0.126,2,0.395,2,0.46875,2,0.2975
+Team nlp_enjoyers,15,0.23,11,0.104,13,0.0925,14,0.1275,14,0.0925

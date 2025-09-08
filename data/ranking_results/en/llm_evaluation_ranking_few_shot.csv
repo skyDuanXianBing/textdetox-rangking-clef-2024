@@ -1,0 +1,18 @@
+team_name,evaluation_type,total_samples,sta_mean,cs_mean,fs_mean,j_score_mean,sta_std,cs_std,fs_std,j_score_std,perfect_scores,zero_scores,file_path
+SomethingAwful,few_shot,100,0.985,0.98,1.0,0.9675,0.08572330399888264,0.09847319278346618,0.0,0.131305603902353,94,0,LLMEvolution/SomethingAwful_en/etd_few_shot_results_en_ENPrompt.csv
+Team cake,few_shot,100,1.0,0.96,0.98,0.9425,0.0,0.15374122295716144,0.0984731927834662,0.1806798329094922,90,1,LLMEvolution/Team cake_en/etd_few_shot_results_en_ENPrompt.csv
+mkrisnai,few_shot,100,0.975,0.98,0.985,0.9425,0.1095214567787952,0.0984731927834662,0.08572330399888264,0.16611651624596807,89,0,LLMEvolution/mkrisnai_en/etd_few_shot_results_en_ENPrompt.csv
+Team NLPunks,few_shot,100,0.985,0.955,0.99,0.9375,0.08572330399888264,0.1438117456323307,0.07035264706814484,0.1824877192491804,89,0,LLMEvolution/Team NLPunks_en/etd_few_shot_results_en_ENPrompt.csv
+Team Iron Autobots,few_shot,100,0.995,0.92,0.99,0.9125,0.049999999999999996,0.1974586006987262,0.07035264706814483,0.21723410543847985,85,1,LLMEvolution/Team Iron Autobots_en/etd_few_shot_results_en_ENPrompt.csv
+gleb.shnshn,few_shot,100,0.965,0.92,1.0,0.8925,0.1282161999881214,0.1974586006987262,0.0,0.23098110902684818,81,1,LLMEvolution/gleb.shnshn_en/etd_few_shot_results_en_ENPrompt.csv
+Team MarSan_AI,few_shot,100,0.895,0.97,0.96,0.84,0.25912634880780583,0.11934162828797101,0.13632996217214535,0.29627314724385295,75,5,LLMEvolution/Team MarSan_AI_en/etd_few_shot_results_en_ENPrompt.csv
+Team_SINAI,few_shot,100,0.965,0.87,0.94,0.78,0.1629122587173968,0.2422537279111896,0.16329931618554522,0.2936190068986019,61,4,LLMEvolution/Team_SINAI_en/etd_few_shot_results_en_ENPrompt.csv
+dkenco,few_shot,100,0.99,0.815,0.965,0.7725,0.07035264706814483,0.3307093691879425,0.1282161999881214,0.3391444226195374,65,10,LLMEvolution/dkenco_en/etd_few_shot_results_en_ENPrompt.csv
+erehulka,few_shot,100,0.98,0.915,0.85,0.7625,0.09847319278346618,0.20169734302121628,0.2302830932359191,0.2783768791920171,56,1,LLMEvolution/erehulka_en/etd_few_shot_results_en_ENPrompt.csv
+backtranslation_baseline,few_shot,100,0.885,0.92,0.935,0.76125,0.2645274040146833,0.1974586006987262,0.16899883449481556,0.3286100011081264,62,6,LLMEvolution/backtranslation_baseline_en/etd_few_shot_results_en_ENPrompt.csv
+mt5_baseline,few_shot,100,0.795,0.935,0.985,0.7375,0.34152805761959615,0.16899883449481554,0.08572330399888266,0.3682044200569772,63,11,LLMEvolution/mt5_baseline_en/etd_few_shot_results_en_ENPrompt.csv
+VitalyProtasov,few_shot,100,0.925,0.855,0.845,0.72125,0.22890825651118377,0.26869493798166294,0.27242828729258584,0.36749862571034175,60,10,LLMEvolution/VitalyProtasov_en/etd_few_shot_results_en_ENPrompt.csv
+nikita.sushko,few_shot,100,0.9,0.82,0.82,0.64,0.23570226039551587,0.28885003623739336,0.2514603810390878,0.36596006295327865,47,8,LLMEvolution/nikita.sushko_en/etd_few_shot_results_en_ENPrompt.csv
+ZhongyuLuo,few_shot,100,0.865,0.845,0.745,0.57375,0.30858916495443045,0.2532116932848118,0.2797455553848457,0.35582055899290055,36,11,LLMEvolution/ZhongyuLuo_en/etd_few_shot_results_en_ENPrompt.csv
+Team nlpjoyers,few_shot,100,0.765,0.765,0.735,0.46125,0.3655285366576885,0.32141574449314214,0.3291786534066051,0.3887199759427983,29,25,LLMEvolution/Team nlpjoyers_en/etd_few_shot_results_en_ENPrompt.csv
+delete_baseline,few_shot,100,0.66,0.775,0.675,0.33875,0.4197161137740797,0.34359213546813844,0.2875795893348834,0.3676875423343559,19,36,LLMEvolution/delete_baseline_en/etd_few_shot_results_en_ENPrompt.csv
