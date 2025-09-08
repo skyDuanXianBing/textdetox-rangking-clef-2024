@@ -1,166 +1,166 @@
-# TextDetox CLEF-2024 评估与排名分析
+# TextDetox CLEF-2024 Evaluation and Ranking Analysis
 
-本项目是基于 CLEF-2024 文本去毒化共享任务的综合评估和排名分析系统。项目包含人工评估、LLM评估以及多种评价指标的对比分析，覆盖9种语言的文本去毒化效果评估。
+This project is a comprehensive evaluation and ranking analysis system based on the CLEF-2024 Text Detoxification shared task. It includes human evaluation, LLM evaluation, and comparative analysis of various evaluation metrics, covering text detoxification effectiveness assessment across 9 languages.
 
-## 🌟 项目特色
+## 🌟 Key Features
 
-- **多语言支持**: 覆盖英语、西班牙语、德语、中文、阿拉伯语、印地语、乌克兰语、俄语和阿姆哈拉语
-- **多维度评估**: 包含人工评估、LLM评估（GPT-4、DeepSeek、Qwen等）和自动评估指标
-- **综合排名系统**: 基于多种一致性指标的排名分析
-- **详细比较报告**: 提供深入的评估质量分析和模型对比
+- **Multi-language Support**: Covers English, Spanish, German, Chinese, Arabic, Hindi, Ukrainian, Russian, and Amharic
+- **Multi-dimensional Evaluation**: Includes human evaluation, LLM evaluation (GPT-4, DeepSeek, Qwen, etc.), and automatic evaluation metrics
+- **Comprehensive Ranking System**: Ranking analysis based on various consistency indicators
+- **Detailed Comparison Reports**: Provides in-depth evaluation quality analysis and model comparisons
 
-## 📁 项目结构
+## 📁 Project Structure
 
 ```
 textdetox_clef_2024/
-├── data/                          # 数据目录
-│   ├── human_evaluation/          # 人工评估数据
-│   │   ├── SomethingAwful/        # 各参赛团队的评估结果
+├── data/                          # Data directory
+│   ├── human_evaluation/          # Human evaluation data
+│   │   ├── SomethingAwful/        # Evaluation results from participating teams
 │   │   ├── Team Iron Autobots/
 │   │   ├── Team NLPunks/
-│   │   └── ...                    # 其他团队和基线方法
-│   ├── result/                    # 评估结果
-│   │   ├── llm_evolution/         # LLM评估演进结果
-│   │   ├── en_py/                 # 英语评估脚本和结果
-│   │   └── zh_py/                 # 中文评估脚本和结果
-│   ├── evaluation_results/        # 综合评估结果
-│   │   ├── llm_evaluation/        # LLM评估对比
-│   │   ├── comprehensive/         # 综合模型对比
-│   │   └── new_models/            # 新模型评估结果
-│   └── ranking_results/           # 排名结果
-│       ├── en/                    # 英语排名
-│       └── zh/                    # 中文排名
-├── scripts/                       # 分析脚本
-│   ├── compare_all_evaluations_*.py  # 评估对比脚本
-│   ├── generate_*_ranking*.py         # 排名生成脚本
-│   └── calculate_fluency_score.py     # 流畅度评分计算
-├── tools/                         # 评估工具
-│   └── chrF-master/              # chrF++评估工具
-├── docs/                         # 文档目录
-│   ├── evaluation_comparison_report.md  # 评估对比报告
-│   ├── LLM_Evaluation_Ranking_Report.md # LLM评估排名报告
-│   └── instructions/             # 评估指导说明
-└── README.md                     # 项目说明文档
+│   │   └── ...                    # Other teams and baseline methods
+│   ├── result/                    # Evaluation results
+│   │   ├── llm_evolution/         # LLM evaluation evolution results
+│   │   ├── en_py/                 # English evaluation scripts and results
+│   │   └── zh_py/                 # Chinese evaluation scripts and results
+│   ├── evaluation_results/        # Comprehensive evaluation results
+│   │   ├── llm_evaluation/        # LLM evaluation comparisons
+│   │   ├── comprehensive/         # Comprehensive model comparisons
+│   │   └── new_models/            # New model evaluation results
+│   └── ranking_results/           # Ranking results
+│       ├── en/                    # English rankings
+│       └── zh/                    # Chinese rankings
+├── scripts/                       # Analysis scripts
+│   ├── compare_all_evaluations_*.py  # Evaluation comparison scripts
+│   ├── generate_*_ranking*.py         # Ranking generation scripts
+│   └── calculate_fluency_score.py     # Fluency score calculation
+├── tools/                         # Evaluation tools
+│   └── chrF-master/              # chrF++ evaluation tool
+├── docs/                         # Documentation directory
+│   ├── evaluation_comparison_report.md  # Evaluation comparison report
+│   ├── LLM_Evaluation_Ranking_Report.md # LLM evaluation ranking report
+│   └── instructions/             # Evaluation guidelines
+└── README.md                     # Project documentation
 ```
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 环境要求
+### Requirements
 
 - Python 3.8+
 - pandas, numpy, scipy, scikit-learn
-- matplotlib, seaborn (用于可视化)
+- matplotlib, seaborn (for visualization)
 
-### 安装依赖
+### Install Dependencies
 
 ```bash
 pip install pandas numpy scipy scikit-learn matplotlib seaborn
 ```
 
-### 运行评估脚本
+### Run Evaluation Scripts
 
-1. **英语评估对比**:
+1. **English Evaluation Comparison**:
 ```bash
 cd scripts
 python compare_all_evaluations_en.py
 ```
 
-2. **中文评估对比**:
+2. **Chinese Evaluation Comparison**:
 ```bash
 python compare_all_evaluations_zh.py
 ```
 
-3. **生成排名结果**:
+3. **Generate Ranking Results**:
 ```bash
 python generate_en_llm_ranking_few_shot.py
 python generate_zh_llm_ranking.py
 ```
 
-## 📊 评估维度
+## 📊 Evaluation Dimensions
 
-### 三维评估框架
+### Three-Dimensional Evaluation Framework
 
-1. **风格转换准确性 (STA)**: 衡量毒性去除的有效性
-2. **内容相似性 (CS)**: 评估语义保持质量  
-3. **流畅度评分 (FS)**: 评估语言质量和可读性
+1. **Style Transfer Accuracy (STA)**: Measures the effectiveness of toxicity removal
+2. **Content Similarity (CS)**: Evaluates semantic preservation quality
+3. **Fluency Score (FS)**: Assesses language quality and readability
 
-### 评分标准
+### Scoring Criteria
 
-- **0分**: 不满足要求
-- **0.5分**: 部分满足要求
-- **1分**: 完全满足要求
+- **0 points**: Does not meet requirements
+- **0.5 points**: Partially meets requirements
+- **1 point**: Fully meets requirements
 
-## 🎯 主要功能
+## 🎯 Main Features
 
-### 1. 人工评估分析
-- 多语言人工评估数据收集
-- 评估者一致性分析
-- 质量控制和统计分析
+### 1. Human Evaluation Analysis
+- Multi-language human evaluation data collection
+- Evaluator consistency analysis
+- Quality control and statistical analysis
 
-### 2. LLM评估系统
-- 支持多种大语言模型（GPT-4、DeepSeek、Qwen等）
-- Zero-shot 和 Few-shot 评估模式
-- 中英文双语提示工程
+### 2. LLM Evaluation System
+- Support for multiple large language models (GPT-4, DeepSeek, Qwen, etc.)
+- Zero-shot and Few-shot evaluation modes
+- Bilingual prompt engineering for Chinese and English
 
-### 3. 综合排名系统
-- 基于 Kendall Tau、Spearman、Pearson 相关性的排名
-- 平均绝对误差和均方误差分析
-- 多维度综合评分
+### 3. Comprehensive Ranking System
+- Rankings based on Kendall Tau, Spearman, and Pearson correlations
+- Mean Absolute Error and Mean Squared Error analysis
+- Multi-dimensional comprehensive scoring
 
-### 4. 对比分析报告
-- 人工评估 vs LLM评估一致性分析
-- 不同模型间的评估质量对比
-- 详细的统计分析和可视化
+### 4. Comparative Analysis Reports
+- Human evaluation vs LLM evaluation consistency analysis
+- Evaluation quality comparison between different models
+- Detailed statistical analysis and visualization
 
-## 📈 评估指标
+## 📈 Evaluation Metrics
 
-### 一致性指标
-- **Kendall Tau**: 等级相关性
-- **Spearman相关系数**: 单调关系度量
-- **Pearson相关系数**: 线性关系度量
+### Consistency Metrics
+- **Kendall Tau**: Rank correlation
+- **Spearman Correlation**: Monotonic relationship measure
+- **Pearson Correlation**: Linear relationship measure
 
-### 误差指标
-- **平均绝对误差 (MAE)**: 评估精确度
-- **均方误差 (MSE)**: 评估稳定性
+### Error Metrics
+- **Mean Absolute Error (MAE)**: Evaluation accuracy
+- **Mean Squared Error (MSE)**: Evaluation stability
 
-## 🏆 参赛团队
+## 🏆 Participating Teams
 
-项目评估了多个参赛团队的文本去毒化系统：
+The project evaluated text detoxification systems from multiple participating teams:
 
-- **SomethingAwful**: 顶级表现团队
-- **Team Iron Autobots**: 综合性能优秀
-- **Team NLPunks**: 创新方法团队
-- **Team cake**: 稳定表现团队
-- 以及其他多个团队和基线方法
+- **SomethingAwful**: Top-performing team
+- **Team Iron Autobots**: Excellent comprehensive performance
+- **Team NLPunks**: Innovative approach team
+- **Team cake**: Stable performance team
+- And several other teams and baseline methods
 
-## 📊 结果概览
+## 📊 Results Overview
 
-### 英语评估结果
-- 最佳团队在所有维度上均表现出色
-- LLM评估与人工评估显示出较高的一致性
-- Few-shot模式比Zero-shot模式表现更好
+### English Evaluation Results
+- Best teams showed excellent performance across all dimensions
+- LLM evaluation showed high consistency with human evaluation
+- Few-shot mode performed better than Zero-shot mode
 
-### 中文评估结果  
-- 中文文本去毒化面临更大挑战
-- 不同模型在中文评估上存在差异
-- 文化和语言特性影响评估质量
+### Chinese Evaluation Results  
+- Chinese text detoxification faces greater challenges
+- Different models show variations in Chinese evaluation
+- Cultural and linguistic characteristics affect evaluation quality
 
-## 🔬 技术细节
+## 🔬 Technical Details
 
-### LLM评估提示工程
-- 专业评估者身份设定
-- 详细的评估标准说明
-- 示例引导的few-shot评估
+### LLM Evaluation Prompt Engineering
+- Professional evaluator identity setup
+- Detailed evaluation criteria explanation
+- Example-guided few-shot evaluation
 
-### 数据处理流程
-1. 原始数据收集和清洗
-2. 多维度评估执行
-3. 结果标准化和对比
-4. 统计分析和排名生成
+### Data Processing Pipeline
+1. Raw data collection and cleaning
+2. Multi-dimensional evaluation execution
+3. Result standardization and comparison
+4. Statistical analysis and ranking generation
 
-## 📖 相关论文
+## 📖 Related Papers
 
-如需引用本工作，请参考以下文献：
+If you wish to cite this work, please refer to the following publications:
 
 ```bibtex
 @inproceedings{dementieva2024overview,
@@ -171,30 +171,30 @@ python generate_zh_llm_ranking.py
 }
 ```
 
-## 📞 联系方式
+## 📞 Contact Information
 
-- **项目负责人**: Daryna Dementieva (dardem96@gmail.com)
-- **技术支持**: Nikolay Babakov (bbkhse@gmail.com)  
-- **学术指导**: Alexander Panchenko (a.panchenko@skol.tech)
+- **Project Lead**: Daryna Dementieva (dardem96@gmail.com)
+- **Technical Support**: Nikolay Babakov (bbkhse@gmail.com)  
+- **Academic Supervisor**: Alexander Panchenko (a.panchenko@skol.tech)
 
-## 📄 许可证
+## 📄 License
 
-本项目基于学术研究目的开放，具体使用条款请参考 CLEF-2024 共享任务规定。
+This project is open for academic research purposes. Please refer to the CLEF-2024 shared task regulations for specific usage terms.
 
-## 🤝 贡献
+## 🤝 Contributing
 
-欢迎提交Issue和Pull Request来改进项目。请确保：
+We welcome Issues and Pull Requests to improve the project. Please ensure:
 
-1. 遵循现有的代码风格
-2. 添加必要的测试和文档
-3. 详细描述修改内容和原因
+1. Follow existing code style
+2. Add necessary tests and documentation
+3. Provide detailed descriptions of modifications and reasons
 
-## 🔗 相关资源
+## 🔗 Related Resources
 
-- [CLEF-2024 TextDetox官方页面](https://pan.webis.de/clef24/pan24-web/text-detoxification.html)
-- [ParaDetox数据集](https://huggingface.co/textdetox)
-- [项目文档](./docs/)
+- [CLEF-2024 TextDetox Official Page](https://pan.webis.de/clef24/pan24-web/text-detoxification.html)
+- [ParaDetox Dataset](https://huggingface.co/textdetox)
+- [Project Documentation](./docs/)
 
 ---
 
-*该项目是CLEF-2024文本去毒化共享任务的评估和排名分析系统，致力于推动多语言文本去毒化技术的发展。*
+*This project is an evaluation and ranking analysis system for the CLEF-2024 Text Detoxification shared task, dedicated to advancing multilingual text detoxification technology.*
